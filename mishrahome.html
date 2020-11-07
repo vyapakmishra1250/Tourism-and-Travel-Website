@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<!-- REquired meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width-device-width, initial-scale=1, shrink-to-fit=no">
     <meta charset="utf-8">
@@ -13,54 +14,15 @@
 	<!--  Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<style>
-		*{
-			box-sizing: border-box;
-		}
-		.gallery{
-			border: 4px solid #fff;
-		}
-		.gallery img{
-			width: 100%;
-			height: auto;
-		}
-		.des{
-			padding: 25px;
-			text-align: center;
-			color: black;
-		}
-		.responsive{
-			padding: 6px 6px;
-			float: left;
-			width: 25%;
-            background-color: aliceblue;
-		}
-		@media only screen and (max-width: 700px){
-			.responsive{
-				width: 50%;
-				margin: 6px 6px;
-			}
-		}
-		@media only screen and (max-width: 500px){
-			.responsive{
-				width: 100%;
-			}
-		}
-		h1{
-			text-align: center;
-		}
-        .Destination{
-          background-color: fuchsia;
-        }
-        .footer{
-          background-color: ;
-        }
-	</style>
+
+	<!-- My Css -->
+	<link rel="stylesheet"  href="main.css">
     <link rel="icon" href="logo.jpg" />
-    <title>places</title>
+    <title>Home</title>
 </head>
 <body>
-	    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+   
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="#">MishraT&T</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -70,7 +32,7 @@
       <li class="nav-item">
         <a class="nav-link" href="mishrahome.html"><i class="fa fa-fw fa-home"></i></a>
       </li>
-     <li class="nav-item dropdown">
+        <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
          Destination 
         </a>
@@ -87,12 +49,13 @@
           <a class="dropdown-item" href="accomodations.html"><i class="fas fa-hotel"></i>Accomdation</a>
           <a class="dropdown-item" href="TravelSeva.html"><i class="fas fa-plane"></i>Travel</a>
         </div>
+        </li>   
          <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           More
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="myGallery.html"><i class="fas fa-image"></i>Gallery</a>
+            <a class="dropdown-item" href="myGallery.html"><i class="fas fa-image"></i>Gallery</a>
           <a class="dropdown-item" href="login.html"><i class="fa fa-fw fa-user"></i> Sign UP</a>
           <a class="dropdown-item" href="about.html"><i class="fa fa-address-book" aria-hidden="true"></i>About Us</a>
         </div>
@@ -100,82 +63,181 @@
     </ul>
   </div>
 </nav>
-
-  <h1>Choose Your Destination</h1>
-    <div class="Destination">
+ <div id="mainCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#mainCarousel" data-slide-to="1"></li>
+      <li data-target="#mainCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <!-- Slide One - Set the background image for this slide in the line below -->
+      <div class="carousel-item active" style="background-image: url('img/slideback/img_bg_2.jpg')">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="display-4">Explore our most tavel agency</h2>
+          <p class="lead">Our Travel Agency</p>
+        </div>
+      </div>
+      <!-- Slide Two - Set the background image for this slide in the line below -->
+      <div class="carousel-item" style="background-image: url('img/slideback/img_bg_3.jpg')">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="display-4">10 Days Cruises</h2>
+          <p class="lead">From Greece to Spain</p>
+        </div>
+      </div>
+      <!-- Slide Three - Set the background image for this slide in the line below -->
+      <div class="carousel-item" style="background-image: url('img/slideback/img_bg_4.jpg')">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="display-4">Experience the </h2>
+          <p class="lead">Best Trip Ever</p>
+        </div>
+      </div>
+    </div>
+    </div>
+    <a class="carousel-control-prev" href="#mainCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+    <a class="carousel-control-next" href="#mainCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+            <br><br>
+    
+    <div class="conatiner">
+      <div class="services">
+        <h2>Our Services</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-3 text-center">
+             <div class="icon">
+              <i class="fa fa-search"></i>
+              </div>
+              <h3>Search Destination</h3>
+              <p>Many people easily confuse where they want to go and then choose wrong Destination. So, First search destination gather info. then select Destination.</p>
+            </div>  
+            <div class="col-md-3 text-center">
+             <div class="icon">
+              <i class="fa fa-map-marker"></i>
+              </div>
+              <h3>Choose Destination</h3>
+              <p>Choose Destination for Couples, Friends or Family. We'll be provide best services.</p>
+            </div>  
+            <div class="col-md-3 text-center">
+             <div class="icon">
+              <i class="fa fa-hotel"></i>
+              </div>
+              <h3>See Hotels</h3>
+              <p>Choose You Stay option according to your budget. there are optons like Hotels, Bunglows, rentedHouses or Villa And so many more options... </p>
+            </div>  
+            <div class="col-md-3 text-center">
+             <div class="icon">
+              <i class="fa fa-plane" ></i>
+              </div>
+              <h3>TravelOptions</h3>
+              <p>Choose You Travel option according to your budget. there are optons like Fligts, Trains, BySea(Cruises) or Vehicles And so many more options...
+            </div>  
+        </div>
+    </div>
+    
+    
+    <br> <br> <br> <br>
+    
+    
+    
+    
+    <div class="content">
+    <h2>Popular Destination</h2>
+        <p><b>We love to tell our successful far far away, behind the word mountains, far from the
+           countries Vokalia and Consonantia, there live the blind texts.</b></p>
+    </div>
     <div class="responsive">
   	<div class="gallery">
   		<a href="book.html" target="_blank"><img src="img/Agra.jpg" width="300" height="200"></a>
-  		<div class="des">Agra/Local-NonInternational</div>
+  		<div class="des">Agra/Local-NonInternational
+          <h4>Family Trip</h4></div>
   	</div>
   </div>
   <div class="responsive">
   	<div class="gallery">
   		<a href="book.html" target="_blank"><img src="img/Amritsar.jpg" width="300" height="200"></a>
-  		<div class="des">Amritsar/Local-NonInternational</div>
+  		<div class="des">Amritsar/Local-NonInternational
+          <h4>Family Trip</h4></div>
   	</div>
   </div>
   <div class="responsive">
   	<div class="gallery">
   		<a href="book.html" target="_blank"><img src="img/1.jpg" width="300" height="200"></a>
-  		<div class="des">Maldives/Local-NonInternational</div>
+  		<div class="des">Maldives/Local-NonInternational
+          <h4>Family Trip</h4></div>
   	</div>
   </div>
   <div class="responsive">
   	<div class="gallery">
   		<a href="book.html" target="_blank"><img src="img/Goa.jpg" width="300" height="200"></a>
-  		<div class="des">Goa/Local-NonInternational</div>
+  		<div class="des">Goa/Local-NonInternational
+          <h4>Family Trip</h4></div>
+    
   	</div>
   </div>
    <div class="responsive">
   	<div class="gallery">
   		<a href="book.html" target="_blank"><img src="img/Amstardam.jpg" width="300" height="200"></a>
-  		<div class="des">Amstardam/International</div>
+  		<div class="des">Amstardam/International
+          <h4>Family Trip</h4></div>
   	</div>
   </div>
   <div class="responsive">
   	<div class="gallery">
   		<a href="book.html" target="_blank"><img src="img/2.jpg" width="300" height="200"></a>
-  		<div class="des">Switzerland/International</div>
+  		<div class="des">Switzerland/International
+          <h4>Family Trip</h4></div>
   	</div>
   </div>
   <div class="responsive">
   	<div class="gallery">
   		<a href="book.html" target="_blank"><img src="img/london.jpg" width="300" height="200"></a>
-  		<div class="des">London/International</div>
+  		<div class="des">London/International
+          <h4>Family Trip</h4></div>
   	</div>
   </div>
   <div class="responsive">
   	<div class="gallery">
   		<a href="book.html" target="_blank"><img src="img/Greece.jpg" width="300" height="200"></a>
-  		<div class="des">Greece/International</div>
+  		<div class="des">Greece/International
+          <h4>Family Trip</h4></div>
   	</div>
   </div>
    <div class="responsive">
   	<div class="gallery">
   		<a href="book.html" target="_blank"><img src="img/Austria.jpg" width="300" height="200"></a>
-  		<div class="des">Austria/International</div>
+  		<div class="des">Austria/International
+          <h4>Family Trip</h4></div>
   	</div>
   </div>
   <div class="responsive">
   	<div class="gallery">
   		<a href="book.html" target="_blank"><img src="img/France.jpg" width="300" height="200"></a>
-  		<div class="des">France/International</div>
+  		<div class="des">France/International
+          <h4>Family Trip</h4></div>
   	</div>
   </div>
   <div class="responsive">
   	<div class="gallery">
   		<a href="book.html" target="_blank"><img src="img/5.jpg" width="100" height="100"></a>
-  		<div class="des">Paris/International</div>
+  		<div class="des">Paris/International
+          <h4>Family Trip</h4></div>
   	</div>
   </div>
   <div class="responsive">
   	<div class="gallery">
   		<a href="book.html" target="_blank"><img src="img/Italy.jpg" width="50" height="100"></a>
-  		<div class="des">Italy/International</div>
+  		<div class="des">Italy/International
+          <h4>Family Trip</h4></div>
   	</div>
   </div>
-</div>        
+    <hr>
+    <br><br>
+	<section>
 		<div class="footer">
 			<div class="footer-content">
 				<div class="footer-refs-content-1">
@@ -211,16 +273,17 @@
 						All Rights Reserved. © 2020 MishraT&T pvt.ltd
 					</div>
 					<div id="footer-align-right">
-						<a href="ww.fcebook.com"><i class="fab fa-facebook-square fa-3x"></i></a>
-						<a href="www.twitter"><i class="fab fa-twitter-square fa-3x"></i></a>
-						<a href="www.google"><i class="fab fa-google-plus-square fa-3x"></i></a>
-						<a href="www.youtube.com"><i class="fab fa-youtube-square fa-3x"></i></a>
+						<a href="ww.fcebook.com"><i class="fab fa-facebook-square fa-2x"></i></a>
+						<a href="www.twitter"><i class="fab fa-twitter-square fa-2x"></i></a>
+						<a href="www.google"><i class="fab fa-google-plus-square fa-2x"></i></a>
+						<a href="www.youtube.com"><i class="fab fa-youtube-square fa-2x"></i></a>
 					</div>
 				</div>
 			</div>
 		</div>
+	</section>
 
-    <!-- JQuery Theter , Then Bootstrap js -->
+<!-- JQuery Theter , Then Bootstrap js -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 <script src="js/bootstrap.min.js"></script>
