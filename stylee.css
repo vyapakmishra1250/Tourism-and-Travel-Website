@@ -1,0 +1,27 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+.header{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	background-image: url(wall.jpg);
+	background-size: cover;
+}
+.container .inner {
+	position: absolute;
+	width: 100%
+	background-color: #f1f1f1;
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+	border-bottom: 4px solid #fff;
+	border-top: 4px solid #fff;
+}
+.container .inner p {
+	color: #fff;
+	font-size: 45px;
+	font-family: arial;
+	text-align: center;
+}

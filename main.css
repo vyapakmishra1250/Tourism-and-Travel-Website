@@ -1,0 +1,46 @@
+.carousel-item {
+  height: 80vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.footerImg{
+padding: 10px;
+}
+		*{
+			box-sizing: border-box;
+		}
+		.gallery{
+			border: 4px solid  black;
+		}
+		.gallery img{
+			width: 100%;
+			height: 100%;
+            transition: 0.3s;
+		}
+		.des{
+			padding: 25px;
+			text-align: center;
+			color: black;
+		}
+		.responsive{
+			padding: 25px 25px;
+			float: left;
+			width: 25%;
+            background: #aaccee;
+		}
+		@media only screen and (max-width: 700px){
+			.responsive{
+				width: 50%;
+				margin: 6px 6px;
+			}
+		}
+		@media only screen and (max-width: 500px){
+			.responsive{
+				width: 100%;
+			}
+		}
